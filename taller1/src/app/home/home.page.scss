@@ -1,0 +1,118 @@
+/* Fondo oscuro con textura retro sutil */
+ion-content {
+  --background: #222;
+  color: #000080; /* azul clásico retro */
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+/* Título principal retro */
+ion-text h1 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #000080;
+  text-shadow: 1px 1px 0 #fff;
+  text-align: center;
+}
+
+/* Párrafo descriptivo */
+ion-text p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #ffffffdd;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Botón con estilo retro 3D */
+ion-button {
+  --background: #000080;
+  --background-activated: #000060;
+  --background-focused: #000060;
+  border: 2px solid #000080;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: none;
+  box-shadow: 3px 3px 0 #fff;
+  border-radius: 2px;
+  margin-top: 10px;
+  transition: all 0.1s ease-in-out;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-button:active {
+  box-shadow: inset 2px 2px 0 #000060;
+  transform: translate(2px, 2px);
+}
+
+/* Cards estilo retro */
+ion-card {
+  --background: #c0c0c0; /* gris retro */
+  border-radius: 6px;
+  border: 4px solid #000080;
+  box-shadow:
+    inset 2px 2px 0 #fff,
+    inset -2px -2px 0 #000080,
+    0 8px 20px rgba(0, 0, 0, 0.15);
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000080;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+ion-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 10px 20px rgba(255 255 255 / 0.15),
+    inset 2px 2px 0 #fff,
+    inset -2px -2px 0 #000080;
+}
+
+ion-card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #000080;
+  text-align: center;
+  text-shadow: 1px 1px #fff;
+}
+
+ion-card-content {
+  font-size: 1rem;
+  color: #000080dd;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  ion-text h1 {
+    font-size: 2rem;
+  }
+
+  ion-text p {
+    font-size: 1rem;
+  }
+
+  ion-card {
+    height: auto;
+  }
+
+  ion-button {
+    max-width: 100%;
+  }
+}

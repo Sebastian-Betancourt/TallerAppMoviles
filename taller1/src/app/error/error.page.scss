@@ -1,0 +1,53 @@
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  padding: 0 20px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.error-container {
+  max-width: 550px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #c0c0c0;
+  border-radius: 12px;
+  box-shadow:
+    inset 2px 2px 0 #fff,
+    inset -2px -2px 0 #000080,
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 4px solid #000080;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000080;
+  text-align: center;
+}
+
+.error-container h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px #fff;
+}
+
+.error-container ion-button {
+  --background: #000080;
+  --background-activated: #000060;
+  --background-focused: #000060;
+  --box-shadow: 3px 3px 0 #fff, inset -2px -2px 0 #000060;
+  border: 2px solid #000080;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: none;
+  box-shadow: 3px 3px 0 #fff;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
+}
+
+.error-container ion-button:active {
+  box-shadow: inset 2px 2px 0 #000060;
+  transform: translate(2px, 2px);
+}

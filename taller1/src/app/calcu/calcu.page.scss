@@ -1,0 +1,90 @@
+ion-content {
+  --background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.display {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.calculator-display {
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+ion-button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  --background: linear-gradient(145deg, #555, #333);
+  transition: transform 0.1s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+ion-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+ion-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #444, #222);
+}
+
+ion-button[color="success"] {
+  --background: linear-gradient(145deg, #00b894, #019875);
+}
+
+ion-button[color="danger"] {
+  --background: linear-gradient(145deg, #ff4d4d, #d10000);
+}
+
+ion-button[color="medium"] {
+  --background: linear-gradient(145deg, #7f8c8d, #2c3e50);
+}
+
+ion-header {
+  --background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+ion-toolbar {
+  --color: white;
+}
+
+ion-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 500px) {
+  .calculator-display {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  ion-button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
